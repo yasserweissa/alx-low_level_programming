@@ -1,12 +1,12 @@
 #include <stdio.h>
 
-/*
+/**
  * main
  *
  * returns 0
  *
  * print using puts
- * /
+ */
 
 int main(void)
 {
