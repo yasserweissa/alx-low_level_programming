@@ -1,12 +1,10 @@
 #include<stdio.h>
 
 /**
- * main - Entry point
- * 
- * Return: 0
- * 
- * Description: print using printf
- */
+* main - Entry point
+* Return: 0
+* Description: print using printf
+*/
 
 int main(void)
 {
