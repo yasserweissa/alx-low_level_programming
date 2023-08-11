@@ -1,9 +1,9 @@
 #include <stdio.h>
 
-/*
+/**
  * main - Entry point
- * Description: size of various types
  * Return: 0
+ * Description: size of various types
  */
 
 int main(void)
