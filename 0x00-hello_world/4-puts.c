@@ -1,11 +1,11 @@
 #include <stdio.h>
 
 /**
- * main
+ * main - Entry point
  *
  * Return: 0
  *
- * print using puts
+ * Description: print using puts
  */
 
 int main(void)
