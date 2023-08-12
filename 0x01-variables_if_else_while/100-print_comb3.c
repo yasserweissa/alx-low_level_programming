@@ -17,7 +17,7 @@ int main(void)
 			{
 				putchar(tens);
 				putchar(units);
-				if (n != 56 || m != 57)
+				if (tens != 56 || units != 57)
 				{
 					putchar(',');
 					putchar(' ');
