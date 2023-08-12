@@ -9,6 +9,7 @@
 int main(void)
 {
 	int tens, units;
+
 	for (tens = 48; tens < 57; tens++)
 	{
 		for (units = 49; units < 58; units++)
