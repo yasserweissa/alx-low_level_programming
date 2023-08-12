@@ -8,7 +8,7 @@
 int main(void)
 {
 	char ch = 97;
-	
+
 	while (ch < 123)
 	{
 		if (ch != 101 && ch != 113)
