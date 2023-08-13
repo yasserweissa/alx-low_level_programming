@@ -1,28 +1,37 @@
 #include <stdio.h>
 
 /**
- * main - print possible 2 digit combinations
+ * main - print possible two 2-digit combinations
  * a number can appear only once
  * Return: 0
  */
 
-int main(void)
+int main(void) 
 {
-	int tens, units;
+	int i = 0;
 
-	for (tens = 48; tens < 58; tens++)
+	while (i < 10000)
 	{
-		for (units = 48; units < 58; units++)
+		/* Extract the two two-digit numbers */
+		int n1 = (i / 100);
+		int n2 = (i % 100);
+
+		/* Print the two two-digit numbers */
+		putchar((n1 / 10) + 48);
+		putchar((n1 % 10) + 48);
+		putchar(' ');
+		putchar((n2 / 10) + 48);
+		putchar((n2 % 10) + 48);
+
+		i++;
+
+		/* Comma and space addition */
+		if (i < 10000)
 		{
-			putchar(tens);
-			putchar(units);
-			if (tens != 57 || units != 57)
-			{
-				putchar(',');
-				putchar(' ');
-			}
+			putchar(',');
+			putchar(' ');
 		}
 	}
-	putchar(10);
+
 	return (0);
 }
