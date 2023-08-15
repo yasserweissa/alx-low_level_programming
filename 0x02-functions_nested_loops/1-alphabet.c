@@ -1,13 +1,12 @@
 #include <stdio.h>
 
+void print_alphabet(void);
+
 /**
  * main - Entry Point
  * Return: 0
  * Description: prints alphabet using function, followed by a new line
 */
-
-void print_alphabet(void);
-
 int main(void)
 {
 	print_alphabet(void);
@@ -16,6 +15,9 @@ int main(void)
 	return (0);
 }
 
+/**
+ * print_alphabet - prints alphabet in lowercase
+ */
 void print_alphabet(void)
 {
 	char ch;
