@@ -5,7 +5,7 @@
  * @n:target times table number
  * Return: no return
  */
-
+void print_times_table(int n)
 {
 	int i, j, k;
 
