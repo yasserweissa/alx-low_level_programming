@@ -5,20 +5,20 @@
  * Return: 0
  */
 
-int main() 
+int main(void)
 {
-    int i;
-    unsigned long long int n1, n2, n3;
+	int i;
+	unsigned long int n1, n2, n3;
 
-    printf("1, 2");
-    
-    for (n1 = 1, n2 = 2, i = 2; i < 50; i++) 
-    {
-        n3 = n1 + n2;
-        printf(", %llu", n3);
-        n1 = n2;
-        n2 = n3;
-    }
+	printf("1, 2");
 
-    return (0);
+	for (n1 = 1, n2 = 2, i = 2; i < 50; i++)
+	{
+		n3 = n1 + n2;
+		printf(", %lu", n3);
+		n1 = n2;
+		n2 = n3;
+	}
+	printf("\n");
+	return (0);
 }
