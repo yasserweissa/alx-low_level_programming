@@ -2,16 +2,16 @@
 
 /**
  * positive_or_negative - prints whether number is +ve or -ve
- * @n: target number
+ * @i: target number
  * Return: void
 */
 
-void positive_or_negative(int n)
+void positive_or_negative(int i)
 {
-	if (n > 0)
-		printf("%d is positive\n", n);
+	if (i > 0)
+		printf("%d is positive\n", i);
 	else if (n < 0)
-		printf("%d is negative\n", n);
+		printf("%d is negative\n", i);
 	else
-		printf("%d is zero\n", n);
+		printf("%d is zero\n", i);
 }
