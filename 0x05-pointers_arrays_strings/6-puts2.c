@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * puts2 - prints everys other character of a string
+ * puts2 - prints everys other character of a string, then a new line
  * @str: string
  * Return: no return
  */
@@ -13,4 +13,5 @@ void puts2(char *str)
 		length++;
 	for (i = 0; i < length; i += 2)
 		_putchar(str[i]);
+	_putchar('\n');
 }
