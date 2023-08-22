@@ -7,13 +7,16 @@
  */
 int _atoi(const char *s)
 {
-	int sign = 1;
-	int result = 0;
-	int i = 0;
+	int sign, result, i, count_minus, count_plus;
 
-	int count_minus = 0;
-	int count_plus = 0;
+	sign = 1;
+	result = 0;
+	i = 0;
 
+	count_minus = 0;
+	count_plus = 0;
+
+	/* char *str = "-2147483648";*/
 	while (s[i] != '\0')
 	{
 		if (s[i] >= '0' && s[i] <= '9')
