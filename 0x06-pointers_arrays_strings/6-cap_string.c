@@ -7,8 +7,10 @@
  */
 int is_separator(char c)
 {
+	int i;
 	char separators[] = " \t\n,.!?\"(){}";
-	for (int i = 0; separators[i] != '\0'; i++)
+
+	for (i = 0; separators[i] != '\0'; i++)
 		if (c == separators[i])
 			return (1);
 	return (0);
@@ -21,9 +23,9 @@ int is_separator(char c)
  */
 char *cap_string(char *s)
 {
-	int C = 1;
+	int C, i;
 
-	for (int i = 0; s[i] != '\0'; i++)
+	for (C = 1, i = 0; s[i] != '\0'; i++)
 	{
 		if (is_separator(s[i]))
 			C = 1;
