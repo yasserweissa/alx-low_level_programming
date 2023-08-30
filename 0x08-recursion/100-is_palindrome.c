@@ -15,6 +15,20 @@ int palicheck(char *s, int i, int z)
 		return (0);
 	return (palicheck(s, i + 1, z - 1));
 }
+
+/**
+ * getlen - returns length of a string
+ * @s: string
+ * Return: length of string
+ */
+int getlen(char *s)
+{
+	if (*s != '\0')
+		return (1 + _strlen_recursion(s + 1));
+	else
+		return (0);
+}
+
 /**
  * is_palindrome - returns one if a string is a palindrome
  * @s: target string
