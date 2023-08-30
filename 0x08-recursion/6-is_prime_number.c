@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
- * primecheck - local (static) helper function, checks if a number is prime
+ * primecheck - local helper function, checks if a number is prime
  * @n: integer, main number
  * @x: integer, to iterate
  * Return: 1 if the number is prime, 0 if otherwise
  */
-static int primecheck(int n, int x)
+int primecheck(int n, int x)
 {
 	if (x == 1)
 		return (x);

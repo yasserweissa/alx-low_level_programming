@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
- * findsqrt - local static helper function, tries to find sqrt starting from 1
+ * findsqrt - local helper function, tries to find sqrt starting from 1
  * @n: integer, main number
  * @x: integer, to be checked if it is sqrt
  * Return: sqrt, or 01 if doesn't exist
  */
-static int findsqrt(int n, int x)
+int findsqrt(int n, int x)
 {
 	if (x * x == n)
 		return (x);
