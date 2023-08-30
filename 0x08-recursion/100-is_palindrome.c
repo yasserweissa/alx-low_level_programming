@@ -24,7 +24,7 @@ int palicheck(char *s, int i, int z)
 int getlen(char *s)
 {
 	if (*s != '\0')
-		return (1 + _strlen_recursion(s + 1));
+		return (1 + getlen(s + 1));
 	else
 		return (0);
 }
@@ -38,7 +38,7 @@ int is_palindrome(char *s)
 {
 	int len;
 
-	for (len = 0; s[len] != '\0';)
-		len++;
+	len = getlen(s);
+
 	return (palicheck(s, 0, len - 1));
 }
