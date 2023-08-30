@@ -26,5 +26,5 @@ int is_palindrome(char *s)
 
 	for (len = 0; s[len] != '\0';)
 		len++;
-	return (palicheck(s, 0, len - 1);
+	return (palicheck(s, 0, len - 1));
 }
