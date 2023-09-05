@@ -1,6 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+/**
+ * main - prints the minimum number of coins to make a certain number
+ * @argc: number of arguments
+ * @argv: arguments vector
+ * Return: 0
+ */
 int main(int argc, char *argv[])
 {
 	int cents, num_coins, coin_count;
@@ -20,6 +26,7 @@ int main(int argc, char *argv[])
 	}
 
 	int coin_values[] = {25, 10, 5, 2, 1};
+
 	num_coins = sizeof(coin_values) / sizeof(coin_values[0]);
 
 	coin_count = 0;
